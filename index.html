@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Портфолио работ</title>
+<style type="text/css">
+.wf{
+opacity: 0.93;
+}
+body{
+background: url(853225c1d2a36a0c6140417aaa5d888e.jpeg) no-repeat;
+background-repeat: repeat;
+background-size:145%;
+background-attachment:fixed;
+}
+ul.menu{
+list-style:none; /* Убираем маркер списка */
+/* background:#F9E3C3;  Задаём цвет фона меню или списка */
+width:8em; /* Ширина блока */
+padding:0 0 0 0; /* Отступы внутри блока */
+font-size: 14pt;
+}
+li.submenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:#007d34; /* Цвет фона */
+}
+h3.mainmenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:#007d34; /* Цвет фона */
+}
+li a{
+text-decoration:none; /* Убираем нижнее подчеркивание у ссылок */
+color:#000000; /* Цвет текста ссылки */
+}
+/*стиль элемента списка и ссылки при наведении на него курсора мыши*/
+li:hover,li:hover a {
+background:#004d20; /* Фон пункта меню при выделении */
+color:#ffffff; /* Цвет ссылки */
+cursor:pointer; /* Устанавливаем вид курсора при выделении пункта меню */ 
+}
+a.lej:hover{
+background-color: #001a0b;
+}
+</style>
+</head>
+<body onload='digitalWatch()'>
+	<!--Создаём таблицу контейнер, которой задаём следующее
+	оформление:
+	border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+	align="center" - размещаем контейнер по центру экрана.
+	rules="rows" - убираем двойную рамку.
+	style="width:60%;" - добавляем стилевое свойства, делающее контейнер и весь сайт "резиновым".
+	Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+	<table border="1" align="center" rules="rows" style="width:60%;">
+	<!--Создаём строку-->
+	<tr>
+	<!--Создаём ячейку строки-->
+	<td>
+	<!--ШАПКА САЙТА-->
+
+		<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+		Оформление:
+		border="0" - рамка толщиной в 0 px
+		background="URL" - картинка в шапке сайта, если требуется.
+		Адрес картинки вы должны вставить свой.
+		bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+		cellpadding="10" - отступ содержимого от рамки не менее 10px.
+		style="width:100%; border-radius:5px;" - добавляем "резиновость"
+		и закругляем уголки рамки-->
+		<table class="wf" border="0" background="URL" bgcolor="#007d34" cellpadding="10" style="width:100%; border-radius:5px;">
+		<!--Создаём строку таблицы-->
+			<tr>
+				<!--Создаём ячейку таблицы с логотипом-->
+				<td> <img src="site_logo.png" width="170" height="150"> </td>
+				<th>
+					<!--Содержание ячейки Заголовок сайта-->
+					<h1 style="margin-bottom: -25px; color:White;"> Портфолио практических работ <br> Клушина Андрея Леонидовича</h1>
+					<h4>представлены работы с использованием основ языка веб-программирования JavaScript</h4>
+					<div id='day'></div>
+<div id='time'></div>
+				<!--Закрываем таблицу ШАПКА САЙТА-->
+				</th>
+			</tr>
+		</table>
+
+		<!--ОСНОВНОЙ КОНТЕНТ-->
+
+		<!--В этой же ячейке контейнера создаём ещё одну таблицу lля основного контента.
+		Оформление как и в предыдущей таблице-->
+
+		<table class="wf" border="1" bgcolor="#00b34a" cellpadding="10" style="width:100%; border-radius:5px;">
+		<!--Создаём строку-->
+		<tr>
+		<!--Меню-->
+		<!--Создаём ячейку меню-->
+		<td bgcolor="#00b34a" valign="top">
+		<h3 class="mainmenu">Меню сайта</h3>
+		<nav>
+				  <ul class="menu">
+						
+					   <li class="submenu"><a href="#">Главная</a></li>
+					   <li class="submenu"><a href="page2.html">Фотогалерея</a></li>
+					   <li class="submenu"><a href="page3.html">Итоговый тест</a></li>
+				  </ul>
+		</nav>
+
+		</td>
+		<!--Создаём ячейку основного содержания
+		Оформление:
+		style="width:80%" - основной контент занимает 80% всей площади, 
+		оставшиеся 20% для меню-->
+		<td  style="width:80%">
+		<h2 align="center">Список практических работ:</h2>
+		<ol>
+			 
+			
+			 <li> Практическая работа №1 «16.09.21».
+				  <ul>
+				  <li > <a class='lej' href='javascript:myWindowOpen3()'>Задание 1</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen4()'>Задание 2</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen5()'>Задание 3</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen6()'>Задание 4</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen7()'>Задание 5</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen8()'>Задание 6</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen9()'>Задание 7</a>
+				  </ul>
+				  <li > Практическая работа №2 «23.09.21».
+			 <ul>
+			 
+				  <li > <a class='lej' href="javascript:myWindowOpen25()">Задание 1</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen27()">Задание 2</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen26()">Задание 3</a>
+				  
+				  <li > <a class='lej' href="javascript:myWindowOpen28()">Задание 4</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen29()">Задание 5</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen30()">Задание 6</a>
+				  </ul>
+				  <li > Практическая работа №3 «30.09.21».
+			 <ul>
+				  <li > <a class='lej' href="javascript:myWindowOpen34()">Задание 1</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen35()">Задание 2</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen36()">Задание 3</a>
+				  </ul>
+				  <li > Практическая работа №4 «21.10.21».
+			 <ul>
+				  <li > <a class='lej' href="javascript:myWindowOpen20()">Задание 1</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen21()">Задание 2</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen22()">Задание 3</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen23()">Задание 4</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen24()">Задание 5</a>
+				  </ul>
+				   <li > Практическая работа №5 «11.11.21».
+			 <ul>
+				  
+				  <li > <a class='lej' href="javascript:myWindowOpen2()">Задание 1</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen1()">Задание 2</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen37()">Задание 3</a>
+				  </ul>
+			 <li > Практическая работа №6 «18.11.21».
+			 <ul>
+				  <li > <a class='lej' href='javascript:myWindowOpen10()'>Задание 1</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen11()'>Задание 2</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen12()'>Задание 3</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen13()'>Задание 4</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen14()'>Задание 5</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen15()'>Задание 6</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen16()'>Задание 7</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen17()'>Задание 8</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen18()'>Задание 9</a>
+				  <li > <a class='lej' href='javascript:myWindowOpen19()'>Задание 10</a>
+				  </ul>
+			 
+			
+			 <li > Практическая работа №7 «25.11.21».
+			 <ul>
+				  <li > <a class='lej' href="javascript:myWindowOpen31()">Задание 1</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen32()">Задание 2</a>
+				  <li > <a class='lej' href="javascript:myWindowOpen33()">Задание 3</a>
+				  </ul>
+			 
+			 <li > Практическая работа №8 «02.12.21».
+			 <ul>
+				  <li> <a class='lej' href="javascript:myWindowOpen()">Задание 1</a>
+				  </ul>
+		</ol>
+		<hr color="#004d20">
+		<!--Закрываем ячейку, строку, таблицу-->
+		</td>
+		</tr>
+		</table>
+
+		<!--ПОДВАЛ-->
+		<!--Создаём таблицу подвала-->
+			<table class="wf"	border="1" bgcolor="#007d34" height="100" cellpadding="10" 	style="width:100%; border-radius:5px;">
+			<!--Создаём строку.-->
+			 <tr>
+			 <!--Создаём столбец-->
+				  <th>
+				  <h6>	&#169; Клушин Андрей, 2021 <br>
+				  студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+				  </h6>
+				  <!--Закрываем таблицу подвала. При желании в подвале можно сделать несколько строк и столбцов-->
+				  </th>
+			 </tr>
+			 </table>
+		 <!--Закрываем таблицу контейнера-->
+		 </td>
+		 </tr>
+	</table>
+
+	<!-- пишем скрипт -->
+	<script>
+let date = new Date();
+let months = [ 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+let word = date.getMonth(); document.getElementById('day').innerHTML = 'Сегодня ' + date.getDate() + ' ' + months[word] + ' ' + date.getFullYear();
+
+function digitalWatch() {
+let time=new Date();
+let hours = time.getHours();
+let minutes = time.getMinutes();
+let seconds = time.getSeconds();
+if (hours < 10) hours = '0' + hours;
+if (minutes < 10) minutes = '0' + minutes;
+if (seconds < 10) seconds = '0' + seconds;
+document.getElementById('time').innerHTML = 'Текущее время ' + hours + ':' + minutes + ':' + seconds;
+setTimeout('digitalWatch()', 1000);
+}
+
+function myWindowOpen() {
+			let window1=window.open('02.12.21/new1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+function myWindowOpen1() {
+			let window1=window.open('11.11.21/new3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen2() {
+			let window1=window.open('11.11.21/new2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen3() {
+			let window1=window.open('16.09.21/new1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen4() {
+			let window1=window.open('16.09.21/new2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen5() {
+			let window1=window.open('16.09.21/new3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen6() {
+			let window1=window.open('16.09.21/new4.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen7() {
+			let window1=window.open('16.09.21/new5.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen8() {
+			let window1=window.open('16.09.21/new6.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen9() {
+			let window1=window.open('16.09.21/new7.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen10() {
+			let window1=window.open('18.11.21/new1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen11() {
+			let window1=window.open('18.11.21/new2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen12() {
+			let window1=window.open('18.11.21/new3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen13() {
+			let window1=window.open('18.11.21/new4.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen14() {
+			let window1=window.open('18.11.21/1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen15() {
+			let window1=window.open('18.11.21/2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen16() {
+			let window1=window.open('18.11.21/3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen17() {
+			let window1=window.open('18.11.21/4.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen18() {
+			let window1=window.open('18.11.21/5.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen19() {
+			let window1=window.open('18.11.21/6.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen20() {
+			let window1=window.open('21.10.21/new1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen21() {
+			let window1=window.open('21.10.21/new3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen22() {
+			let window1=window.open('21.10.21/new4.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen23() {
+			let window1=window.open('21.10.21/new6.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen24() {
+			let window1=window.open('21.10.21/new7.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen25() {
+			let window1=window.open('23.09.21/1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen26() {
+			let window1=window.open('23.09.21/3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen27() {
+			let window1=window.open('23.09.21/2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen28() {
+			let window1=window.open('23.09.21/5.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen29() {
+			let window1=window.open('23.09.21/6.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen30() {
+			let window1=window.open('23.09.21/7.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen31() {
+			let window1=window.open('25.11.21/1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen32() {
+			let window1=window.open('25.11.21/2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen33() {
+			let window1=window.open('25.11.21/3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen34() {
+			let window1=window.open('30.09.21/new1.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen35() {
+			let window1=window.open('30.09.21/new2.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			function myWindowOpen36() {
+			let window1=window.open('30.09.21/new3.html', '_blank', 'top=150 left=200 width=1000 height=800');
+			}
+			
+	function myWindowOpen37() {
+			let window1=window.open('11.11.21/new4.html', '_blank', 'top=150 left=200 width=1000 height=800');
+}
+	</script>
+
+</body>
+</html>

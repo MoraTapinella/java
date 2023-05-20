@@ -1,0 +1,26 @@
+<html> 
+<head>   
+<title>Смена размеров изображения при клике</title> 
+<script> 
+var bigsize = "300"; //Размер большой картинки 
+var smallsize = "150"; //Размер маленькой картинки //функция смены размера изображения 
+function changeSizeImage(im) {   if (im.height == bigsize)    im.height = smallsize;   else im.height = bigsize; } 
+</script> 
+</head> 
+<body>  
+<table align="center">   
+<tr>     
+<td align="center">       
+<img src="1.jpg" height="150" onclick="changeSizeImage(this)"/>       
+<br>       
+<b>Изображение 1</b>     
+</td>     
+<td align="center">       
+<img src="2.jpg" height="150" onclick="changeSizeImage(this)"/>       
+<br>       
+<b>Изображение 2</b>     
+</td>   
+</tr> 
+</table> 
+</body> 
+</html> 

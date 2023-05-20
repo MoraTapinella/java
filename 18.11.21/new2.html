@@ -1,0 +1,15 @@
+<html> 
+<head> 
+<title>События</title> 
+</head> 
+<body> 
+<button ondblclick="buttonClick()">Нажми на меня</button> 
+<input type="text" id="input" value="Начальный текст"> 
+<script> 
+function buttonClick() { 
+ var input = document.getElementById('input'); 
+ input.value = 'Измененный текст'; 
+} 
+</script> 
+</body> 
+</html>

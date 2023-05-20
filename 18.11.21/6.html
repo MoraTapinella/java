@@ -1,0 +1,19 @@
+<html > <head> <title>Смена изображения</title> </head> 
+<body> 
+<script >  
+var а = 0;   
+function changeImage() {     
+if (а == 0) {       
+document.img.src = '1.jpg';      
+а = 1;     
+}       
+else { 
+document.img.src = '2.jpg';          
+а = 0;     
+}   
+} 
+</script>   
+<button onClick = 'changeImage()' > Сменить изображение </button>  <br>   
+<img name = 'img' width='250px' height='250px' src = '1.jpg' /> 
+</body> 
+</html> 

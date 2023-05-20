@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head><title>задание 4</title></head>
+<body>
+<script>
+var listType=prompt("Введите '1'- если нумерованный список,'2'- если маркированный список");
+if (listType=='1'){
+document.write("<ol>")
+}
+else if (listType=='2'){
+document.write("<ul>")
+}
+else {
+alert ("Введите правильный тип");
+exit;
+}
+var kolvo=prompt("Введите количество пунктов");
+kolvo=parseint(kolvo);
+for (var i=1; i<=kolvo; i++)
+document.write("<li></li>");
+if (listType=='1')
+document.write("</ol>")
+else if (listType=='2')
+document.write("</ul>");
+
+</script>
+</body>
+</html>

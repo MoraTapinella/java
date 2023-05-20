@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> s </title>
+</head>
+<body>
+<p>Нумерованный список</p>
+<ol id=ordlist>
+<li>Первый</li>
+<li id=lis>Второй</li>
+<li>Третий</li></ol>
+
+</br>
+<script>
+oList=document.getElementByld('ordlist')
+document.write('Родительский элемент тera ol '+oList.parentElement nodeNamet+'</br>');
+document.write('Дочерний элемент тега ol '+oList.children[0].nodeName+'</br>');
+document.write('Первый дочерний элемент '+oList.firstElementChild.nodeName+'</br>');
+document.write('Последний дочерний элемент '+oList.lastElementChild.nodeNamet+'</br>');
+document.write('Предыдущий сестринский элемент тега '+oList.previousElementSibling.nodeNamet+'</br>');
+document.write('Последующий сестринский элемент '+oList.nextElementSibling.nodeName+'</br>');
+</script>
+</body>
+</html>

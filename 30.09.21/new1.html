@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+<title>1</title>
+</head>
+<body>
+<h3> Найти большее из 2-х введенных чисел </h3> <br>
+        <button onclick='max()' >Ввести числа</button>  <br>
+        Большее число: <b id='maximal'></b>          
+<script>    
+ function max(a, b) {
+    var a = prompt('Введите первое число: ', '');
+    var b = prompt('Введите второе число: ', '');
+    if (a > b) {
+    document.getElementById('maximal').innerText= a;
+  } else {
+    document.getElementById('maximal').innerText= b;
+  }
+}
+</script>
+</body>
+</html>

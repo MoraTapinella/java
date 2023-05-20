@@ -1,0 +1,19 @@
+<html> 
+<head>
+<title>Изменение свойств изображения</title>  
+<script> //функция для изменения параметров изображения 
+function changeimg(){  //обращение к расположению изображения:
+ document.getElementById("myimg").src=document.myform.mysrc.value; //обращение к ширине изображения: 
+ document.getElementById("myimg").width=document.myform.mywidth.value; //обращение к высоте изображения: 
+ document.getElementById("myimg").height=document.myform.myheight.value; }
+ </script> 
+ </head>  
+<body> 
+<form id="myform" name="myform"> <!-- Ввод значений свойств изображения в раскрывающемся списке --> Файл: 
+<select id="mysrc" name="mysrc" > <option value="1.jpg"/> Картинка1 <option value="2.jpg"/>Картинка2 <option value="3.jpg"/>Картинка3 </select> <br/> <!--Ширина изображения вводится в текстовое поле--> Ширина: <input id="mywidth" name="mywidth" type="text" value="200" size="4"/>  
+<!--Высота изображения вводится в текстовое поле--> Высота: <input id="myheight" name="myheight" type="text" value="100" size="4"/> <br/>  
+<!-- кнопка Применить--> <input id="applay" name="applay" type="button" value="Применить" onclick="changeimg()"/>  
+<!-- кнопка Отмена--> <input id="cancel" name="cancel" type="button" value="Отмена" onclick="document.myform.reset(); changeimg()"/> </form>  
+<!--изображение по умолчанию: --> <img id="myimg" name="myimg" src="1.jpg" alt="Картинка" width="200" height="100"/>  
+</body> 
+</html>
